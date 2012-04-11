@@ -9,7 +9,7 @@ permalink: /
   <div id="{{ category | first }}" class="collapse">
     <ul>
     {% for post in category.last %}
-      <a href="{{ post.url }}"><li>{{ post.title }}</li></a>
+      <a href="{{ site.url }}{{ post.url }}"><li>{{ post.title }}</li></a>
     {% endfor %}
     </ul>
    </div>

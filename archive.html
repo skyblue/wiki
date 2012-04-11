@@ -4,7 +4,7 @@ permalink: /archive/
 ---
 <ul>
 {% for post in site.posts %}
-<a href="{{ post.url }}"><li>{{ post.title }}</li></a>
+<a href="{{ site.url }}{{ post.url }}"><li>{{ post.title }}</li></a>
 {% endfor %}
 </ul>
 <hr>
