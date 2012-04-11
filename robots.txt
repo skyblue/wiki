@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: {{ site.url }}wiki/sitemap.xml

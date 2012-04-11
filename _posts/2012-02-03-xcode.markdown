@@ -1,0 +1,21 @@
+--- 
+layout: post
+title: Xcode
+date: 2012-02-03 15:45:28
+categories:
+    - Apps
+tags:
+    - Tips
+---
+##将TODO和FIXME显示为警告
+
+* 打开 `Targets` 的 `Build Phases`
+* 点击右下角的 `Add Build Phase`，选择 `Add Run Script`
+* 输入以下内容
+
+<pre class="prettyprint linenums">
+KEYWORDS="TODO:|FIXME:|\?\?\?:|\!\!\!:"
+find "${SRCROOT}" \( -name "*.h" -or -name "*.m" \) -print0 | xargs -0 egrep --with-filename --line-number --only-matching "($KEYWORDS).*\$" | perl -p -e "s/($KEYWORDS)/ warning: \$1/"
+</pre>
+
+这样 `//TODO:` 和 `//FIXME:` 都将显示为警告 [via](http://deallocatedobjects.com/posts/show-todos-and-fixmes-as-warnings-in-xcode-4)

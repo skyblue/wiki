@@ -1,0 +1,19 @@
+---
+layout: default
+title: skyblue的wiki
+permalink: /
+--- 
+<ul class="unstyled">
+{% for category in site.categories %}
+  <li><h3><a data-toggle="collapse" href="#{{ category | first }}" name="{{ category | first }}">{{ category | first }}</a></h3>
+  <div id="{{ category | first }}" class="collapse">
+    <ul>
+    {% for post in category.last %}
+      <a href="{{ post.url }}"><li>{{ post.title }}</li></a>
+    {% endfor %}
+    </ul>
+   </div>
+  </li>
+{% endfor %}
+</ul>
+<hr>

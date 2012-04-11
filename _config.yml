@@ -1,0 +1,10 @@
+markdown: rdiscount 
+permalink: /:categories/:title
+title: skyblue的wiki
+url: http://skyblue.github.com/wiki/
+exclude: [ README.md, bin/newpost.rb ]
+domain: skyblue.github.com/wiki/
+author: Skyblue
+email: skyblue1984+blog@gmail.com
+auto: true
+twitterID: skyblue1984

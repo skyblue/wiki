@@ -1,0 +1,33 @@
+--- 
+layout: post
+title: Git
+date: 2012-02-03 16:44:30
+categories:
+    - System
+---
+##在服务器建立私密Git仓库
+在相关文件夹运行
+<pre class="prettyprint linenums">
+git --bare init
+//接着在本地
+git remote add origin <url-of-bare-repo>
+git push --all origin
+</pre>
+
+<hr>
+
+##git add
+`git add .` only add what is there, not what has been deleted (if tracked).
+
+<pre class="prettyprint linenums">
+git add .
+git commit
+git status
+//hey! why didn't it commit my deletes?, Oh yeah, silly me
+git add -u
+git commit --amend
+</pre>
+git add -A would take care of both steps... [via](http://stackoverflow.com/questions/2190409/whats-the-difference-between-git-add-and-git-add-u)
+
+##简约版提交信息
+`git shortlog`
