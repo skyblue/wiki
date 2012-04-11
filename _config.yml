@@ -1,7 +1,7 @@
 markdown: rdiscount 
 permalink: /:categories/:title
 title: skyblue的wiki
-url: http://skyblue.github.com/wiki/
+url: http://skyblue.github.com/wiki
 base_dir: /wiki/
 exclude: [ README.md, bin/newpost.rb ]
 domain: skyblue.github.com
