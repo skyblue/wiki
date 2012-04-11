@@ -1,8 +1,8 @@
 markdown: rdiscount 
-permalink: /wiki/:categories/:title
+permalink: /:categories/:title
 title: skyblue的wiki
 url: http://skyblue.github.com/wiki/
-base_dir:/wiki/
+base_dir: /wiki/
 exclude: [ README.md, bin/newpost.rb ]
 domain: skyblue.github.com
 author: Skyblue
