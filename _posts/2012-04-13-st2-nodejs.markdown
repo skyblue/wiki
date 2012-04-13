@@ -1,0 +1,21 @@
+--- 
+layout: post
+title: ST2 Build Nodejs
+date: 2012-04-13 19:17:00
+categories:
+    - Programming
+tags:
+    - nodejs
+    - sublime
+---
+##To use this in ST2, go to “Tools” -> “Build System” -> “New Build System…” and paste the above code in to the new window.
+* use: CTRL+b
+* exit CTRL+`
+
+<pre class="prettyprint linenums">
+{
+    "cmd": ["node", "$file_name"],
+    "selector": "source.js",
+    "working_dir" : "$file_path"
+}
+</pre>
