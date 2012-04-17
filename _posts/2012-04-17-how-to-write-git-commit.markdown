@@ -3,7 +3,7 @@ layout: post
 title: 如何写GIT的提交注释
 date: 2012-04-17 14:28:39
 categories:
-    - Development
+    - Git
 ---
 
 一般情况下，提交 GIT 时的注释可以分成几类，可以用几个动词开始：

@@ -1,9 +1,9 @@
 --- 
 layout: post
-title: Git
+title: Git Tips
 date: 2012-02-03 16:44:30
 categories:
-    - System
+    - Git
 ---
 ##在服务器建立私密Git仓库
 在相关文件夹运行
