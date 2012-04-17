@@ -6,7 +6,7 @@ permalink: /
 <ul class="unstyled">
 {% for category in site.categories %}
   <li><h3><a data-toggle="collapse" href="#{{ category | first }}" name="{{ category | first }}">{{ category | first }}</a></h3>
-  <div id="{{ category | first }}" class="collapse">
+  <div id="{{ category | first }}" class="collapse in">
     <ul>
     {% for post in category.last %}
       <a href="{{ site.url }}{{ post.url }}"><li>{{ post.title }}</li></a>
